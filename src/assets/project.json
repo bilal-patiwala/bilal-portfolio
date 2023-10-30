@@ -1,0 +1,20 @@
+[
+    {
+        "title":"BeCommunity",
+        "description":"Application designed to provide users with the opportunity to join or create communities based on a wide range of topics. The platform is built to foster a sense of belonging, promote collaboration, and provide an inclusive space for individuals to connect with others who share similar interests and passions.",
+        "tech-stack":"Build using Python, Django, JavaScript, ReactJs, Postgresql",
+        "link": "https://github.com/bilal-patiwala/BeCommunity-Backend"
+    },
+    {
+        "title":"ShareBox",
+        "description":"A simple marketplace for small content creators and writers to sell their creations and earn from them and also provide a platform for people to find good reads and content at a reasonable price.",
+        "tech-stack":"Build using Python, Django, JavaScript, ReactJs, Postgresql, Stripe",
+        "link": "https://github.com/bilal-patiwala/ShareBox"
+    },
+    {
+        "title":"ChatApp",
+        "description":"A real time React.js and Django based website that lets you chat with your friends",
+        "tech-stack":"Build using Python, Django, DjangoRestFramework, Channels & WebSockets, JavaScript, React.js, JWT",
+        "link": "https://github.com/bilal-patiwala/ShareBox"
+    }
+]
