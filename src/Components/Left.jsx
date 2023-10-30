@@ -7,14 +7,14 @@ const Left = ({onLinkClick}) => {
         <div className='top-line'>
         </div>
         <div className='middle-container'>
-            {links.map((link, index) => (
-                <p key={index} onClick={() => onLinkClick(link)}>{link}</p>
-            ))}
-            {/* <p>Home</p>
-            <p>about</p>
-            <p>projects</p>
-            <p>Blogs</p>
-            <p>socials</p> */}
+            {/* {links.map((link, index) => (
+                <a key={index} href='#'>{link}</a>
+            ))} */}
+            <a href='#Home'>Home</a>
+            <a href='#About'>about</a>
+            <a>projects</a>
+            <a>Blogs</a>
+            <a>socials</a>
         </div>
         <div className='top-line'>
         </div>
