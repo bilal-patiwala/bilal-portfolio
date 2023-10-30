@@ -51,7 +51,7 @@ const Right = ({selectedSectionRef}) => {
             
             <div className='project-list'>
                 {data.map((project, index) => (
-                    <div key={index} class="max-w- p-6 bg-white border border-gray-200 rounded-lg shadow bg-[#1a2639] border-gray-700">
+                    <div key={index} class="max-w- p-6 bg-white border border-gray-200 rounded-lg shadow border-gray-700 project-div" >
                         <p>
                             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 text-white">{project.title}</h5>
                         </p>
