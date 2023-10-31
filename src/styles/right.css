@@ -252,7 +252,7 @@
 /* Media query for viewport width less than or equal to 1050px */
 @media only screen and (max-width: 1050px) {
     .quote-header {
-        margin-top: 30px;
+        margin-top: 20px;
         margin-right: 20px;
         display: flex;
         flex-direction: column;
@@ -262,7 +262,7 @@
         font-family: 'Courier New', Courier, monospace;
         font-weight: 500;
         padding: 10px;
-        font-size: 20px;
+        font-size: 16px;
         text-align: right;
         /* 'text-wrap' should be 'white-space' to wrap text */
         white-space: normal;
