@@ -1,8 +1,9 @@
 import {React, useRef} from 'react'
 import Profile from '../assets/profile.jpeg'
-import img1 from '../assets/0.jpg'
+import book from '../assets/book.png'
 import '../styles/right.css'
 import data from '../assets/project.json'
+import blogs from "../assets/blogs.json"
 
 const Right = ({selectedSectionRef}) => {
   return (
@@ -46,7 +47,7 @@ const Right = ({selectedSectionRef}) => {
 
         </div>
 
-        <div className='projects'>
+        <div className='projects'  id='Projects'>
             <p className='common-headline'>Projects</p>
             
             <div className='project-list'>
@@ -56,8 +57,8 @@ const Right = ({selectedSectionRef}) => {
                             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 text-white">{project.title}</h5>
                         </p>
                         <ul className='point-list'>
-                            <li class="mb-3 font-normal text-[#ececec] text-gray-400">{project.description}</li>
-                            <li class="mb-3 font-normal text-[#ececec] text-gray-400">{project['tech-stack']}</li>
+                            <li class="mb-3 font-normal text-gray-400">{project.description}</li>
+                            <li class="mb-3 font-normal text-gray-400">{project['tech-stack']}</li>
                         </ul>
                         <a href={project.link} target='blank' class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 bg-blue-600 focus:ring-blue-800">
                             Read more
@@ -73,6 +74,29 @@ const Right = ({selectedSectionRef}) => {
 
         </div>
 
+        <div className='blogs rounded-md flex flex-col gap-4' id='Blogs'>
+            <p className='common-headline'>Blogs</p>
+            {blogs.map((blog, index) => (
+                <div key={index} className='flex flex-row space-between gap-8 pl-1 mt-2'>
+                    <img src={blog.image} alt="" className='border basis-1/3 blog-img rounded-md'/>
+
+                    <div className='basis-2/3 flex flex-col gap-2'>
+                        <p className='text-[2em] leading-none font-md'>{blog.titel}</p>
+                        <div className='flex flex-row gap-5'>
+                            <p className='text-gray-800'>{blog.date}</p>
+                            <div className='flex gap-1'>
+                                <img className="w-6 h-6" src={book} alt="" />
+                                <p className='text-gray-800'>{blog.time}</p>
+                            </div>
+                        </div>
+                        <p className='text-gray-800'>{blog.overview}...</p>
+                        <a href={blog.link} class="w-32 text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Read more</a>
+                    </div>
+
+                </div>
+            ))}
+        </div>
+        
     </div>
   )
 }

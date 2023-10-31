@@ -33,12 +33,11 @@
     text-transform: uppercase;
     font-weight: 500;
     font-size: 20px;
-    text-decoration: underline;
     cursor: pointer;
 }
 
-.middle-container > p:hover{
-    
+.middle-container > a:hover{
+    text-decoration: underline;
 }
 
 .middle-container > a:last-child{

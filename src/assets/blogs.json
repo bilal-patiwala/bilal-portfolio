@@ -1,0 +1,26 @@
+[
+    {
+        "titel":"5 core concepts that will help you master Django.",
+        "date":"Jul 16, 2022",
+        "time":"5 min read",
+        "overview":"Django is a high-level python web framework that enables the development of secure and maintainable websites",
+        "link":"https://bilalpatiwala.hashnode.dev/5-core-concepts-that-will-help-you-master-django",
+        "image":"https://cdn.hashnode.com/res/hashnode/image/unsplash/xG8IQMqMITM/upload/v1656175030787/4UtXcXgv9.jpeg?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp"
+    },
+    {
+        "titel":"Most used commands in Django and their functionalities.",
+        "date":"Feb 21, 2022",
+        "time":"1 min read",
+        "overview":"Django-admin startproject projectname",
+        "link":"https://bilalpatiwala.hashnode.dev/most-used-commands-in-django-and-their-functionalities",
+        "image":"https://cdn.hashnode.com/res/hashnode/image/unsplash/npxXWgQ33ZQ/upload/v1645446430290/YP3vi_cd-.jpeg?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp"
+    },
+    {
+        "titel":"Everything you need to know about Django before starting.",
+        "date":"Jan 12, 2022",
+        "time":"2 min read",
+        "overview":"Django is used in many popular sites like : Disqus, Instagram, Knight Foundation, MacArthur Foundation, Mozilla, National Geographic etc",
+        "link":"https://bilalpatiwala.hashnode.dev/everything-you-need-to-know-about-django-before-starting",
+        "image":"https://cdn.hashnode.com/res/hashnode/image/unsplash/BI465ksrlWs/upload/v1641922885319/M_79O2Kxb.jpeg?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp"
+    }
+]

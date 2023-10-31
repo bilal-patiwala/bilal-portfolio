@@ -148,6 +148,21 @@
     list-style: circle;
 }
 
+.point-list > li{
+    color: #c2c2c2;
+}
+
 .project-div{
     background-color: #1a2639;
+}
+
+.blogs{
+    width: 90%;
+    margin-top: 50px;
+    margin-left: 30px;
+    padding: 10px;
+}
+
+.blog-img{
+    width: 300px;
 }

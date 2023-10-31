@@ -12,8 +12,8 @@ const Left = ({onLinkClick}) => {
             ))} */}
             <a href='#Home'>Home</a>
             <a href='#About'>about</a>
-            <a>projects</a>
-            <a>Blogs</a>
+            <a href='#Projects'>projects</a>
+            <a href='#Blogs'>Blogs</a>
             <a>socials</a>
         </div>
         <div className='top-line'>
