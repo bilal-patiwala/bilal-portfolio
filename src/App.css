@@ -3,3 +3,15 @@
   width: 100%;
   position: relative;
 }
+
+@media only screen and (max-width: 1050px) {
+  .main-container {
+    display: flex; /* Reset the display property */
+    flex-direction: column;
+    width: 100%; /* Reset the width property */
+    position: relative; /* Reset the position property */
+  }
+  .left{
+    display: none;
+  }
+}

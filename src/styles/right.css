@@ -2,7 +2,6 @@
     flex: 80;
     /* border-right: 2px solid black; */
     overflow: auto;
-    
 }
 .container{
     width: 100%;
@@ -38,7 +37,7 @@
     margin-left: 20px;
     margin-top: 50px;
     display: flex;
-
+    align-items: center;
 }
 
 .profile{
@@ -165,4 +164,124 @@
 
 .blog-img{
     width: 300px;
+}
+
+.profile1{
+    display: none;
+}
+.name-sub-header1{
+    display: none;
+}
+#intro-name1{
+    display: none;
+}
+
+@media only screen and (max-width: 570px) {
+    .projects{
+        width: 95%;
+        margin-left: 10px;
+    }
+    .profile{
+        display: none;
+    }
+    .name-sub-header{
+        display: none;
+    }
+    .profile1{
+        display: block;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+    }
+    .name-sub-header1{
+        display: block;
+        flex: 90;
+        font-family: 'Times New Roman', Times, serif;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        margin: auto;
+        margin-left: 30px;
+    }
+    .name-sub-header1 > p{
+        display: block;
+        font-size: 0.8em;
+        margin-bottom: 10px;
+        color: #4a4a4a;
+    }
+    #intro-name1{
+        display: block;
+        color: black;
+        font-size: 1.5em;
+    }
+
+    .blogs{
+        width: 95%;
+        margin-left:10px ;
+    }
+
+    .about-sec{
+        margin-left: 20px;
+    }
+}
+
+/* Media query for viewport width less than or equal to 680px */
+@media (max-width: 680px) {
+    .profile{
+        width: 100px;
+        height: 100px;
+    }
+    #intro-name{
+        font-size: 20px;
+    }
+    .blog {
+        flex-direction: column;
+    }
+}
+
+/* Media query for viewport width greater than or equal to 300px */
+@media (min-width: 300px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+/* Media query for viewport width less than or equal to 1050px */
+@media only screen and (max-width: 1050px) {
+    .quote-header {
+        margin-top: 30px;
+        margin-right: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .quote {
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 500;
+        padding: 10px;
+        font-size: 20px;
+        text-align: right;
+        /* 'text-wrap' should be 'white-space' to wrap text */
+        white-space: normal;
+        font-style: italic;
+    }
+    .profile {
+        width: 200px;
+        height: 200px;
+    }
+    #intro-name {
+        font-size: 3em;
+    }
+    
+    .name-sub-header > p {
+        margin-bottom: 6px;
+        font-size: 1.5em;
+    }
+
+    .about-me {
+        width: 100%;
+    }
+    .skills {
+        width: 90%;
+    }
 }

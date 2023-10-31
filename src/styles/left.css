@@ -44,3 +44,29 @@
     margin-bottom: 12px;
 }
 
+.left-nav{
+    display: none;
+}
+
+@media only screen and (max-width: 1050px) {
+    .left-nav{
+        display: block;
+        position: sticky;
+        top: 0;
+        background-color: white;
+    }
+    #navbar-c{
+        font-size: 14px;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 10px;
+    }
+    #navbar-c > a{
+        font-weight: 600;
+        font-style: italic;
+        text-transform: uppercase;
+    }
+    #navbar-c > a:hover{
+        text-decoration:underline ;
+    }
+}

@@ -11,13 +11,16 @@ const Right = ({selectedSectionRef}) => {
     const [randomIndex, setRandomIndex] = useState(0);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      const newIndex = Math.floor(Math.random() * Quotes.length);
-      setRandomIndex(newIndex);
-    }, 24*60*60*1000); // 24 hours in milliseconds
+    // const interval = setInterval(() => {
+    //   const newIndex = Math.floor(Math.random() * Quotes.length);
+    //   setRandomIndex(newIndex);
+    // }, 24*60*60*1000); // 24 hours in milliseconds
 
-    // Clear the interval when the component unmounts to prevent memory leaks
-    return () => clearInterval(interval);
+    // // Clear the interval when the component unmounts to prevent memory leaks
+    // return () => clearInterval(interval);
+
+    const newIndex = Math.floor(Math.random() * Quotes.length);
+    setRandomIndex(newIndex);
   }, []);
 
 
@@ -28,6 +31,12 @@ const Right = ({selectedSectionRef}) => {
             <p className='name'> ~ {Quotes[randomIndex].author}</p>
         </div>
         <div className='name-header'>
+            <img src={Profile} alt="" className='profile1'/>
+            <div className='name-sub-header1'>
+                <p id='intro-name1'>Hello 👋, I am Bilal Patiwala</p>
+                <p>I Program and Develop Software</p>
+                <p>20, He/Him</p>
+            </div>
             <img src={Profile} alt="" className='profile'/>
             <div className='name-sub-header'>
                 <p id='intro-name'>Hello 👋, I am Bilal Patiwala</p>
@@ -92,7 +101,7 @@ const Right = ({selectedSectionRef}) => {
         <div className='blogs rounded-md flex flex-col gap-4' id='Blogs'>
             <p className='common-headline'>Blogs</p>
             {blogs.map((blog, index) => (
-                <div key={index} className='flex flex-row space-between gap-8 pl-1 mt-2'>
+                <div key={index} className='flex flex-row space-between gap-8 pl-1 mt-2 blog'>
                     <img src={blog.image} alt="" className='border basis-1/3 blog-img rounded-md'/>
 
                     <div className='basis-2/3 flex flex-col gap-2'>
@@ -112,6 +121,8 @@ const Right = ({selectedSectionRef}) => {
             ))}
         </div>
         
+        
+
     </div>
   )
 }
