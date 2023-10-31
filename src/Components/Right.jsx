@@ -1,16 +1,31 @@
-import {React, useRef} from 'react'
+import {React, useRef, useState, useEffect} from 'react'
 import Profile from '../assets/profile.jpeg'
 import book from '../assets/book.png'
 import '../styles/right.css'
 import data from '../assets/project.json'
 import blogs from "../assets/blogs.json"
+import Quotes from '../assets/quotes.json'
 
 const Right = ({selectedSectionRef}) => {
+
+    const [randomIndex, setRandomIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const newIndex = Math.floor(Math.random() * Quotes.length);
+      setRandomIndex(newIndex);
+    }, 24*60*60*1000); // 24 hours in milliseconds
+
+    // Clear the interval when the component unmounts to prevent memory leaks
+    return () => clearInterval(interval);
+  }, []);
+
+
   return (
     <div className='container'>
         <div className='quote-header' id='Home' ref={selectedSectionRef}>
-            <p className='quote'>Good programmers know what to write. Great ones know what to rewrite and reuse.</p>
-            <p className='name'> ~ Eric S. Raymond</p>
+            <p className='quote'>{Quotes[randomIndex].quote}</p>
+            <p className='name'> ~ {Quotes[randomIndex].author}</p>
         </div>
         <div className='name-header'>
             <img src={Profile} alt="" className='profile'/>
