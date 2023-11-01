@@ -121,7 +121,7 @@ const Right = ({selectedSectionRef}) => {
             ))}
         </div>
         
-        <div className="social" id='#Socials'>
+        <div className="social" id='Socials'>
             <p className='common-headline'>Contact, Socials</p>
             <div>
                 <p>Github</p>
