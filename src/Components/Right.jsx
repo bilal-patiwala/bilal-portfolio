@@ -121,7 +121,33 @@ const Right = ({selectedSectionRef}) => {
             ))}
         </div>
         
-        
+        <div className="social" id='#Social'>
+            <p className='common-headline'>Contact, Socials</p>
+            <div>
+                <p>Github</p>
+                <a href="https://github.com/bilal-patiwala">@bilal-patiwala</a>
+            </div>
+            <div>
+                <p>Linkedin</p> 
+                <a href="https://www.linkedin.com/in/bilal-patiwala/">@bilal-patiwala</a>
+            </div>
+            <div>
+                <p>twitter</p>
+                <a href="https://twitter.com/patiwala_bilal">@patiwala_bilal</a>
+            </div>
+            <div>
+                <p>Intstagram</p>
+                <a href="https://www.instagram.com/patiwala_bilal/">@patiwala_bilal</a>
+            </div>
+            <div>
+                <p>HashNode</p>
+                <a href="https://www.instagram.com/patiwala_bilal/">@patiwala_bilal</a>
+            </div>
+            <div>
+                <p>Gmail</p>
+                <p>bilalpatiwala04@gmail.com</p>
+            </div>
+        </div>
 
     </div>
   )
