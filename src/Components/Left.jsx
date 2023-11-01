@@ -36,7 +36,7 @@ const Left = ({onLinkClick}) => {
             <a href='#About'>about</a>
             <a href='#Projects'>projects</a>
             <a href='#Blogs'>Blogs</a>
-            <a>socials</a>
+            <a href='#Socials'>socials</a>
         </div>
         <div className='top-line'>
         </div>
